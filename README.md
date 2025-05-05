@@ -1,73 +1,85 @@
 # Book Search Engine
 
-![License](https://img.shields.io/badge/License-MIT-blue.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-A MERN stack application that allows users to search for books using the Google Books API. Users can create an account, search for books, and save their favorite books to their profile. The application uses GraphQL with Apollo Server for efficient data fetching and mutations.
+A MERN stack application that allows users to search for books using the Google Books API. Users can create an account, search for books, and save their favorite books to their profile. This application was built using React, GraphQL, Node.js, Express, and MongoDB.
 
-## Table of Contents
+## Features
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [Questions](#questions)
-- [Credits](#credits)
-- [License](#license)
+- User authentication with JWT
+- Search for books using the Google Books API
+- Save books to your profile
+- View your saved books
+- Remove books from your saved list
+- Responsive design for desktop and mobile
 
 ## Installation
 
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Create a `.env` file in the root directory with your MongoDB connection string and JWT secret
-4. Start the development server:
-   ```bash
-   npm run develop
-   ```
+1. Clone the repository:
+```bash
+git clone git@github.com:mazagri3/book-search-engine.git
+cd book-search-engine
+```
+
+2. Install dependencies for both client and server:
+```bash
+npm install
+cd client
+npm install
+```
+
+3. Create a `.env` file in the root directory and add your MongoDB connection string:
+```
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_secure_random_string
+```
 
 ## Usage
 
-- Search for books using the search bar
-- Create an account or login to save books
-- View your saved books in your profile
-- Remove books from your saved list
+1. Start the development server:
+```bash
+npm run develop
+```
+
+2. Open your browser and navigate to `http://localhost:3000`
+
+3. Create an account or log in to start searching for books
+
+4. Use the search bar to find books
+   - Click "Save This Book!" to add a book to your profile
+   - View your saved books in the "See Your Books" section
+   - Remove books from your saved list as needed
 
 ## Technologies Used
 
-- MongoDB
-- Express.js
 - React
-- Node.js
 - GraphQL
 - Apollo Server
-- TypeScript
+- Node.js
+- Express
+- MongoDB
+- Mongoose
 - JWT Authentication
-
-## Contributing
-
-Contributions are welcome. Please submit a pull request or open an issue for any feature requests or bugs.
-
-## Questions
-
-For any questions, please contact me on GitHub at [mazagri3](https://github.com/mazagri3)
-
-## Credits
-
-This project was created as part of a coding bootcamp assignment. Special thanks to:
-- ChatGPT for assistance with code implementation
-- Bootcamp instructors and tutors for guidance
-- Google Books API for providing the book data
+- Google Books API
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Preview
+## Credits
 
-![Search Page](/assets/img/search.png)
-![Saved Books](/assets/img/saved-books.png)
-![Login Page](/assets/img/login.png) 
+Created by Obi Mazagri
+
+## Walkthrough Video
+[Watch the walkthrough video](https://drive.google.com/file/d/1mSHRxIXGDeJS04y7djB7o0IVqF2DLPZP/view?usp=sharing)
+
+## Project URL
+[View the project on GitHub](https://github.com/mazagri3/book-search-engine)
+
+## Screenshot
+[View the screenshot](https://drive.google.com/file/d/1Ja_fly5JtmqrHzDD0t246soGxdGcWhoi/view?usp=sharing)
+
+---
+© 2025 Book Search Engine. All Rights Reserved.
